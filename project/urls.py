@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ejemplo.views import imc, index, index2,index_tres, imc
+from ejemplo.views import index, index2,index_tres, imc
 
 
 urlpatterns = [
