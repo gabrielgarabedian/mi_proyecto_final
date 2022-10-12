@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    HOLA ESTO ES UN SALUDO DESDE UN TEMPLATE!!!!
+    HOLA ESTO ES UN SALUDO DESDE UN TEMPLATE!!!! {{nombre}}
+
+    {% for nota in notas %}
+        {{nota}}
+    {% end for %}    
 </body>
 </html>
