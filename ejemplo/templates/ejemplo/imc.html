@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IMC</title>
 </head>
 <body>
-   el indice de imc es {{imc}}
-   
+
+   Una persona de {{peso}} kg y una altura de {{altura}} cm
+   <br>
+   <br>
+   Su indice IMC es:
    {%if imc > 24.8%}
-        el valor es elevado
+        <p style="color:red"> {{imc}}</p>
+        El valor es elevado     
+   {% elif imc < 24.8 and imc > 15.8 %}
+        <p style="color:green"> {{imc}}</p>
+        El valor es normal
     {% else %}
-       el valor es bajo
+        <p style="color:red"> {{imc}}</p>
+        El valor es bajo
+       
+       
     {% endif%}
      
 </body>

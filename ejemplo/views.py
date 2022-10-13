@@ -20,6 +20,11 @@ def index_tres(request):
 def imc(request, peso, altura):
     imc = peso *10000 / (altura**2)
    
-    return render(request,"ejemplo/imc.html",{'imc':imc},)
+    return render(request,"ejemplo/imc.html",
+    {  
+        'peso': peso,
+        'altura': altura,
+        'imc':imc
+    },)
 
   
