@@ -7,8 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-   el indice de imc es {{imc}}, por su {{peso}}kg y {{altura}}cm
-
+   el indice de imc es {{imc}}
+   
+   {%if imc > 24.8%}
+        el valor es elevado
+    {% else %}
+       el valor es bajo
+    {% endif%}
      
 </body>
 </html>
