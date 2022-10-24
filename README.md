@@ -4,3 +4,4 @@ Este es mi proyecto final Python
 Lista de Integrantes:
 
 Gabriel Garabedian,
+Federico Carreño,
