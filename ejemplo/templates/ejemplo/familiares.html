@@ -7,10 +7,11 @@
 
 {% block contenido %}
 
-    {% for familiar in lista_familiares %}
-        <ul>
-            <li> Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Pasaporte: {{familiar.numero_pasaporte}} </li>
-        </ul>
-    {% endfor %}
+
+{% for familiar in lista_familiares %}
+    <ul>
+        <li> Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Pasaporte: {{familiar.numero_pasaporte}}, Fecha de nacimiento: {{familiar.fecha_de_nacimiento}} </li>
+    </ul>
+{% endfor %}
     
 {%endblock%}
