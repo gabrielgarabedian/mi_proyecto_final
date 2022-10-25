@@ -5,3 +5,4 @@ Lista de Integrantes:
 
 Gabriel Garabedian,
 Federico Carreño,
+Fabrizzio Crescini,
