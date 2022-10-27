@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from ejemplo.views import index, index2,index_tres, imc, monstrar_familiares, AltaFamiliar, BuscarFamiliar
 from blog.views import index as blog_index
 
@@ -29,4 +29,5 @@ urlpatterns = [
     path('blog/', blog_index),
     path('mi-familia/buscar', BuscarFamiliar.as_view()),
     path('mi-familia/alta', AltaFamiliar.as_view()),
+    path('panel-familia/', include('panel_familia.urls')),
 ]

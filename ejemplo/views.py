@@ -3,6 +3,7 @@ from ejemplo.models import Familiar
 from ejemplo.forms import Buscar, FamiliarForm #<--- NUEVO IMPORT
 from django.views import View # <-- NUEVO IMPORT 
 
+
 def index(request):
     return render(request, "ejemplo/saludar.html", {"nombre":"Gabriel"})
 
@@ -74,3 +75,6 @@ class AltaFamiliar(View):
             return render(request, self.template_name, {'form':form, 
                                                         'msg_exito': msg_exito})
         return render(request, self.template_name, {"form": form})    
+
+
+  
