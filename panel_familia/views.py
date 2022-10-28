@@ -17,4 +17,4 @@ class FamiliarBorrar(DeleteView):
 class FamiliarActualizar(UpdateView):
   model = Familiar
   success_url = "/panel-familia"
-  fields = ["nombre", "direccion", "numero_pasaporte"]
+  fields = ["nombre", "direccion", "numero_pasaporte"] 
