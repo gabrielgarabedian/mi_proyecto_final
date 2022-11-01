@@ -8,7 +8,7 @@ class FamiliarList(ListView):
 class FamiliarCrear(CreateView):
   model = Familiar
   success_url = "/panel-familia"
-  fields = ["nombre", "direccion", "numero_pasaporte", "Fecha_nacimiento"]
+  fields = ["nombre", "direccion", "numero_pasaporte"]
   
 class FamiliarBorrar(DeleteView):
   model = Familiar
