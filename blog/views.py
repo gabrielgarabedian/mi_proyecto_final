@@ -1,3 +1,4 @@
+from turtle import title
 from django.shortcuts import render
 from blog.models import Configuracion
 from django.views.generic import ListView, CreateView, DeleteView, UpdateView, DetailView
@@ -21,3 +22,8 @@ class BlogLogin(LoginView):
     
 class BlogLogout(LogoutView):
     template_name = 'blog/blog_logout.html'
+
+class SearchPostByName(ListView):#se agrega antes del listview el LoginRequiredMixin para filtrar el acceso con login
+    def get_queryset(self):
+        post_title= self.request.GET.get('post-title')
+        return Post.objects.filter(title__icontains=post_title)
